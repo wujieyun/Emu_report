@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "AG_EmuReport.html",
+    "href": "AG_EmuReport.html",
+    "title": "Full-length 16S ONT Report",
+    "section": "",
+    "text": "Kit type: Ligation sequencing DNA v14 - dual barcoding SQK-NBD114.24 with EXP-PBC096\nFor multiplexing &gt;96 samples, each amplicon is barcoded with a PCR barcode (BC01-BC96). Samples are pooled and a single native barcode (NB) is additionally to each pool of 96 PCR barcoded samples.\nFlowcell: PromethION FLO-PRO114M"
+  },
+  {
+    "objectID": "AG_EmuReport.html#nanopore-run-method",
+    "href": "AG_EmuReport.html#nanopore-run-method",
+    "title": "Full-length 16S ONT Report",
+    "section": "",
+    "text": "Kit type: Ligation sequencing DNA v14 - dual barcoding SQK-NBD114.24 with EXP-PBC096\nFor multiplexing &gt;96 samples, each amplicon is barcoded with a PCR barcode (BC01-BC96). Samples are pooled and a single native barcode (NB) is additionally to each pool of 96 PCR barcoded samples.\nFlowcell: PromethION FLO-PRO114M"
+  },
+  {
+    "objectID": "AG_EmuReport.html#basecalling-method",
+    "href": "AG_EmuReport.html#basecalling-method",
+    "title": "Full-length 16S ONT Report",
+    "section": "Basecalling method",
+    "text": "Basecalling method\nAt Auckland Genomics, we perform re-basecalling using the “Super high accuracy basecalling” model after the run is completed, so you have the most accurate data possible. In our opinion, this is the best data to use for downstream analysis.\n\nRe-basecalled output directory: fastq_pass_SupHigh\nBasecalling software: Dorado v0.9.1\nBasecalling model: dna_r10.4.1_e8.2_400bps_sup@v5.0.0\nBasecalling type: Super-high accuracy model\nTrimming setting (i.e. trims primers, adapters and/or barcodes) : --trim all"
+  },
+  {
+    "objectID": "AG_EmuReport.html#emu-full-length-16s-ont-analysis",
+    "href": "AG_EmuReport.html#emu-full-length-16s-ont-analysis",
+    "title": "Full-length 16S ONT Report",
+    "section": "Emu full-length 16S ONT analysis",
+    "text": "Emu full-length 16S ONT analysis\nWe use Emu for full-length ONT 16S analysis.\n\nMethod summary\nFASTQ files generated from super-high basecalling using Dorado were processed for analysis. These reads were trimmed using NanoFilt to a length of 1,200-2,000 bases and a quality score threshold of &gt;10. Then, the filtered reads were analysed using Emu with the SILVA-138.1 database, resulting in the identification of number of taxonomic units (NTUs), which are analogous to amplicon sequence variants (ASVs).\n\n\nResult summary\nAll results are organised within the folder Emu, which contains the following subdirectories:\n\nFolder EmuOutputs_Summay: Contains a series of relative abundance .tsv files of all samples, each collapsed at different taxonomic ranks (from phylum to species), generated from the filtered sequences.\nFolder EmuOutputs_Plot: Includes relative abundance plots based on Emu output results, collapsed at different taxonomic ranks (from phylum to species). Reads that could not be assigned a taxonomic classification are labelled as ‘Unknown’ in the plots.\nFolder EmuOutputs_ALL: Contains Emu outputs for each sample, generated from the filtered sequences. These outputs are used to compile the summarised results in the folder EmuOutputs_Summary.\nTables fastq_QC_ RawData_Summary.tsv: A summary table providing a quality check assessment of the raw data reads.\nFolder filtered_read: Contains sequences after the filtering process.\nFolder NanoPlot_FilteredReads_AllSamples_Summary: Includes Nanoplot reports visualising the sequence quality of filtered reads."
+  },
+  {
+    "objectID": "AG_EmuReport.html#outputs",
+    "href": "AG_EmuReport.html#outputs",
+    "title": "Full-length 16S ONT Report",
+    "section": "Outputs",
+    "text": "Outputs\nPlots of relative abundance were generated based on Emu output results using R package ggplot2, collapsed at different taxonomic ranks (from phylum to species). Reads that could not be assigned a taxonomic classification are labelled as ‘Unknown’ in the plots.\n\nPhylum level\n\n\n\n\n\n\n\n\n\n\n\nClass level\n\n\n\n\n\n\n\n\n\n\n\nOrder level\n\n\n\n\n\n\n\n\n\n\n\nFamily level\n\n\n\n\n\n\n\n\n\n\n\nGenus level\n\n\n\n\n\n\n\n\n\n\n\nSpecies level"
+  }
+]
